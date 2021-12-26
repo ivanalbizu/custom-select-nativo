@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edge Canary SelectMenu</title>
+    <link rel="stylesheet" href="style.scss" />
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Customize native selects. Experimental</h1>
+      <h2>edge://flags/#enable-experimental-web-platform-features</h2>
+      <h2>chrome://flags/#enable-experimental-web-platform-features</h2>
+      <a href="https://open-ui.org/">https://open-ui.org/</a>
+    </header>
+    <main>
+      <div class="filters">
+        <div class="filter">
+          <label for="svg-icons-filter">SelectMenu with SVG</label>
+          <selectmenu id="svg-icons-filter">
+            <div slot="button" behavior="button">
+              <button behavior="selected-value"></button>
+            </div>
+            <popup slot="listbox" behavior="listbox">
+              <option value="now" checked>
+                <span
+                  class="iconify"
+                  data-icon="mdi-light:clipboard-check"
+                ></span>
+                Clipboad
+              </option>
+              <option value="week">
+                <span class="iconify" data-icon="mdi-light:forum"></span> Forum
+              </option>
+              <option value="month">
+                <span class="iconify" data-icon="mdi-light:group"></span>This is
+                a group
+              </option>
+              <option value="year">
+                <span class="iconify" data-icon="mdi-light:picture"></span>This
+                Image placeholder
+              </option>
+              <option value="all">
+                <span
+                  class="iconify"
+                  data-icon="mdi-light:view-dashboard"
+                ></span
+                >Grid system
+              </option>
+            </popup>
+          </selectmenu>
+        </div>
+
+        <div class="filter">
+          <label for="framework-filter">Js Frameworks</label>
+          <selectmenu id="framework-filter">
+            <div slot="button" behavior="button">
+              <button behavior="selected-value"></button>
+            </div>
+            <popup slot="listbox" behavior="listbox">
+              <option value="vue" checked>VueJS</option>
+              <option value="react">React</option>
+              <option value="angular">Angular</option>
+              <option value="svelte">Svelte</option>
+              <option value="vanillaJS">Vanilla JS</option>
+            </popup>
+          </selectmenu>
+        </div>
+
+        <div class="filter">
+          <label for="language-filter">Programming language</label>
+          <selectmenu id="language-filter">
+            <div slot="button" behavior="button">
+              <button behavior="selected-value"></button>
+            </div>
+            <popup slot="listbox" behavior="listbox">
+              <option value="javascript" checked>javascript</option>
+              <option value="php">php</option>
+              <option value="java">java</option>
+              <option value="python">python</option>
+              <option value="c++">c++</option>
+              <option value="pascal">pascal</option>
+              <option value="swift">swift</option>
+              <option value="scala">scala</option>
+              <option value="go">go</option>
+              <option value="objective-C">objective-C</option>
+              <option value="rust">rust</option>
+            </popup>
+          </selectmenu>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
