@@ -7,7 +7,7 @@ De momento no está disponible, sólo se puede probar usando Canary (Edge o Chro
   <li>chrome://flags/#enable-experimental-web-platform-features</li>
 </ul>
 
-Ojalá algún día llegue a todos los navegadores, parece mentira que para las etiquetas <code>&lt;select&gt; no pasara el tiempo, siguen sin poder customizarse sin ningún <code>hack</code> mediante javascript
+Ojalá algún día llegue a todos los navegadores, parece mentira que para las etiquetas <code>&lt;select&gt;</code> no pasara el tiempo, siguen sin poder customizarse sin ningún <code>hack</code> mediante javascript
 
 Se puede obtener más información en el siguiente enlace: <a href="https://open-ui.org/" target="_blank" rel="noopener">https://open-ui.org/</a>
 
